@@ -13,7 +13,14 @@
         let submit = document.querySelector("button[type='submit']");
         submit.click();
         try {
-        setTimeout(function() {alert(document.body.innerHTML);}, 10000);
+        setTimeout(function() {alert(document.body.innerHTML);
+        document.body.innerHTML += "<div id='tt'>Hello, </div>";
+            try {
+                document.getElementById("tt").innerHTML += "World";
+            } catch(e) {
+                alert(e.message);
+            }
+        }, 10000);
         } catch (e) {
             alert(e);
         }
