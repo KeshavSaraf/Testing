@@ -13,7 +13,7 @@
         let submit = document.querySelector("button[type='submit']");
         submit.click();
         try {
-        setTimeout(function() {document.body.innerHTML}, 10000);
+        setTimeout(function() {alert(document.body.innerHTML);}, 10000);
         } catch (e) {
             alert(e);
         }
