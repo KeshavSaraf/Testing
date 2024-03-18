@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <form action="https://keshavsaraf.github.io/rewards" target="popup" onsubmit="form_submit_win = window.open('about:blank','popup','width=1000,height=800');">
+    <button type="submit">Submit</button>
+    </form>
+    <script>
+        let submit = document.querySelector("button[type='submit']");
+        submit.click();
+        setTimeout(function() {alert("HI");}, 5000);
+        setTimeout(function() {document.querySelector("div").innerHTML}, 10000);
+    </script>
+</body>
+</html>
