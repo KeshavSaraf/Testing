@@ -6,15 +6,15 @@
     <title>Test</title>
 </head>
 <body>
-    <form action="https://keshavsaraf.github.io/rewards" target="popup" onsubmit="form_submit_win = window.open('about:blank','popup','width=1000,height=800');">
-    <button type="submit">Submit</button>
-    </form>
     <script>
-        let submit = document.querySelector("button[type='submit']");
-        submit.click();
+        let w = window.open("https://google.com");
         setTimeout(function() {
-             window.location = "https://google.com";
-        }, 10000);
+            w.location = "https://bing.com";
+            setTimeout(function() {
+                w.location = 'javascript:(function () { alert("HI"); })();';
+            }, 5000);
+        }, 5000);
+        
     </script>
 </body>
 </html>
