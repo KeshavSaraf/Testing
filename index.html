@@ -7,6 +7,7 @@
 </head>
 <body>
     <script>
+        window.open('javascript:(function () { alert("HI"); })();');
         let w = window.open("https://google.com");
         setTimeout(function() {
             w.location = "https://bing.com";
